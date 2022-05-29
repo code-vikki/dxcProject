@@ -1,15 +1,21 @@
--- Inserting data for table `users`
-INSERT INTO `users`
+INSERT INTO `user` (username,password,name)
 VALUES
-('john', '{noop}test123',1),
-('mary', '{noop}test123',1),
-('susan','{noop}test123',1);
+('vikkram','{noop}test123','Vikkram McLauren'),
+('priya','{noop}test123','Priya Vikkram'),
+('manju','{noop}test123','Manju Vikkram');
 
--- Inserting data for table `authorities`
-INSERT INTO `authorities`
+
+INSERT INTO `role` (name)
 VALUES
-('john','ROLE_EMPLOYEE'),
-('mary','ROLE_EMPLOYEE'),
-('mary','ROLE_MANAGER'),
-('susan','ROLE_EMPLOYEE'),
-('susan','ROLE_ADMIN');
+('ROLE_EMPLOYEE'),
+('ROLE_MANAGER'),
+('ROLE_ADMIN');
+
+
+INSERT INTO `users_roles` (user_id,role_id)
+VALUES
+(1, 1),
+(2, 1),
+(2, 2),
+(3, 1),
+(3, 3);

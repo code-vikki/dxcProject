@@ -4,7 +4,6 @@
    <head>
 	<title>DXC Home Page</title>
    </head>
-
 <body>
 	<h2>DXC Technology Home Page</h2>
 	<hr>
@@ -15,6 +14,8 @@
     <!--display username and role-->
     <p>
        User Name: <security:authentication property="principal.username"/>
+       <br><br>
+       Name: ${user.name}
        <br><br>
        Role: <security:authentication property="principal.authorities"/>
     </p>
@@ -30,7 +31,5 @@
     			   method="POST">
         <input type="submit" value="logout"/>
     </form:form>
-
 </body>
-
 </html>
