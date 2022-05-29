@@ -1,4 +1,4 @@
-package com.vikkram;
+package com.vikkram.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

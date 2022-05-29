@@ -1,4 +1,4 @@
-package com.vikkram;
+package com.vikkram.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
